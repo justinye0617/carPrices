@@ -77,7 +77,7 @@ The dense clustering around the red diagonal line confirms the model generalizes
 
 A feature importance plot from the trained LightGBM model reveals the most influential predictors in the dataset:
 
-![Feature Importance](https://github.com/justinye0617/Used-Car-Price-Prediction-Model/blob/main/featureImportance.png)
+![Feature Importance]([https://github.com/justinye0617/Used-Car-Price-Prediction-Model/blob/main/featureImportance.png](https://github.com/justinye0617/Used-Car-Price-Prediction-Model/blob/main/top20features.png))
 
 Key features included:
 - `car_age`
