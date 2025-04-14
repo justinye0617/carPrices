@@ -63,21 +63,38 @@ Two models were trained and evaluated:
 
 LightGBM outperformed linear regression significantly in both RMSE and R^2, indicating that it captured complex, non-linear relationships between vehicle features and price.
 
-## Visualization
+## Visualizations
 
-A scatter plot of predicted vs actual prices for LightGBM demonstrated that the model was able to closely approximate the true price values across the dataset:
+### Actual vs Predicted Prices (LightGBM)
+
+A scatter plot of predicted vs actual prices demonstrated that the model closely approximated real-world price values:
 
 ![Actual vs Predicted Prices](https://github.com/justinye0617/Used-Car-Price-Prediction-Model/blob/main/actualVsPredicted.png)
 
-The dense clustering around the diagonal line confirms that the model generalizes well on unseen data.
+The dense clustering around the red diagonal line confirms the model generalizes well to unseen data.
+
+### Top 20 Feature Importances from LightGBM
+
+A feature importance plot from the trained LightGBM model reveals the most influential predictors in the dataset:
+
+![Feature Importance](https://github.com/justinye0617/Used-Car-Price-Prediction-Model/blob/main/featureImportance.png)
+
+Key features included:
+- `car_age`
+- `odometer`
+- `fuel_diesel`, `fuel_gas`
+- `transmission_automatic`
+- and various one-hot encoded region/state indicators
 
 ## Key Takeaways
 
 - The most important features for predicting price include `car_age`, `odometer`, `fuel`, `drive`, and `transmission`.
 - Linear regression captured only about 42% of the variance in price, while LightGBM explained about 73%, confirming the importance of non-linear modeling techniques in this problem space.
 - Log-transforming the price and filtering outliers were critical steps in improving model performance.
+- Feature importance visualization provides valuable insight into which attributes most influence used car valuations.
 
 ## Next Steps
-- Analyze LightGBM feature importance to refine the model.
+
 - Explore NLP techniques on listing `description` fields (if available).
-- Investigate advanced ensemble methods or model stacking.
+- Incorporate interaction terms or polynomial features for linear models.
+- Investigate ensemble methods or model stacking to push performance further.
