@@ -1,12 +1,10 @@
 # Used Car Price Prediction Model
 
-This project applies machine learning techniques to predict the price of used cars using a cleaned dataset sourced from Craigslist vehicle listings. The goal is to understand the most influential factors in used car pricing and build regression models to predict price with a high degree of accuracy.
+This project applies machine learning techniques to predict the price of used cars using a cleaned dataset sourced from vehicle listings. The goal is to understand the most influential factors in used car pricing and build regression models to predict price with a high degree of accuracy.
 
 ## Dataset Overview
 
-- **Source**: Kaggle Craigslist Cars and Trucks dataset
-- **Rows**: 426,880 vehicle listings
-- **Features**: 18 columns (numeric and categorical)
+- **Source**: vehicles.csv Dataset
 
 ### Feature Summary
 
