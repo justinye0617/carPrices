@@ -67,6 +67,8 @@ LightGBM outperformed linear regression significantly in both RMSE and R^2, indi
 
 A scatter plot of predicted vs actual prices for LightGBM demonstrated that the model was able to closely approximate the true price values across the dataset:
 
+![Actual vs Predicted Prices](https://github.com/justinye0617/Used-Car-Price-Prediction-Model/blob/main/actualVsPredicted.png)
+
 The dense clustering around the diagonal line confirms that the model generalizes well on unseen data.
 
 ## Key Takeaways
